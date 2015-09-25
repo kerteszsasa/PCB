@@ -1,0 +1,80 @@
+Protel Design System Design Rule Check
+PCB File : C:\SASA\pcbdesigns\NRF24L01_test_node\V1\NRF24L01_test_node.PcbDoc
+Date     : 2014.08.13.
+Time     : 16:43:58
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silkscreen Over Component Pads (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Pad U1-14(12.025mm,12.975mm)  Top Layer and 
+                     Pad U1-13(12.675mm,12.975mm)  Top Layer
+   Violation between Pad U1-12(13.325mm,12.975mm)  Top Layer and 
+                     Pad U1-13(12.675mm,12.975mm)  Top Layer
+   Violation between Pad U1-15(11.375mm,12.975mm)  Top Layer and 
+                     Pad U1-14(12.025mm,12.975mm)  Top Layer
+   Violation between Pad U1-16(10.725mm,12.975mm)  Top Layer and 
+                     Pad U1-15(11.375mm,12.975mm)  Top Layer
+   Violation between Pad U1-17(10.075mm,12.975mm)  Top Layer and 
+                     Pad U1-16(10.725mm,12.975mm)  Top Layer
+   Violation between Pad U1-18(9.425mm,12.975mm)  Top Layer and 
+                     Pad U1-17(10.075mm,12.975mm)  Top Layer
+   Violation between Pad U1-19(8.775mm,12.975mm)  Top Layer and 
+                     Pad U1-18(9.425mm,12.975mm)  Top Layer
+   Violation between Pad U1-20(8.125mm,12.975mm)  Top Layer and 
+                     Pad U1-19(8.775mm,12.975mm)  Top Layer
+   Violation between Pad U1-7(12.025mm,7.275mm)  Top Layer and 
+                     Pad U1-8(12.675mm,7.275mm)  Top Layer
+   Violation between Pad U1-9(13.325mm,7.275mm)  Top Layer and 
+                     Pad U1-8(12.675mm,7.275mm)  Top Layer
+   Violation between Pad U1-6(11.375mm,7.275mm)  Top Layer and 
+                     Pad U1-7(12.025mm,7.275mm)  Top Layer
+   Violation between Pad U1-5(10.725mm,7.275mm)  Top Layer and 
+                     Pad U1-6(11.375mm,7.275mm)  Top Layer
+   Violation between Pad U1-4(10.075mm,7.275mm)  Top Layer and 
+                     Pad U1-5(10.725mm,7.275mm)  Top Layer
+   Violation between Pad U1-3(9.425mm,7.275mm)  Top Layer and 
+                     Pad U1-4(10.075mm,7.275mm)  Top Layer
+   Violation between Pad U1-2(8.775mm,7.275mm)  Top Layer and 
+                     Pad U1-3(9.425mm,7.275mm)  Top Layer
+   Violation between Pad U1-1(8.125mm,7.275mm)  Top Layer and 
+                     Pad U1-2(8.775mm,7.275mm)  Top Layer
+   Violation between Pad U1-10(13.975mm,7.275mm)  Top Layer and 
+                     Pad U1-9(13.325mm,7.275mm)  Top Layer
+   Violation between Pad U1-11(13.975mm,12.975mm)  Top Layer and 
+                     Pad U1-12(13.325mm,12.975mm)  Top Layer
+Rule Violations :18
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 18
+Time Elapsed        : 00:00:01

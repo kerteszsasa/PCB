@@ -1,0 +1,30 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [Robonaut.PcbDoc]
+   Generated File[Robonaut.TXT]
+   Generated File[Robonaut.DRL]
+   Generated File[Robonaut.LDP]
+   Generated File[Robonaut.DRR]
+
+Output: Gerber Files
+Type  : Gerber
+From  : PCB Document [Robonaut.PcbDoc]
+   Generated File[Robonaut.GTL]
+   Generated File[Robonaut.GBL]
+   Generated File[Robonaut.GTS]
+   Generated File[Robonaut.GBS]
+   Generated File[Robonaut.GKO]
+   Generated File[Robonaut.RUL]
+   Generated File[Robonaut.EXTREP]
+   Generated File[Robonaut.REP]
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [Robonaut_board.PrjPCB]
+   Generated File[Bill of Materials-Robonaut_board.xls]
+
+
+Files Generated   : 13
+Documents Printed : 0
+
+Finished Output Generation At 14:35:18 On 2012.11.14.

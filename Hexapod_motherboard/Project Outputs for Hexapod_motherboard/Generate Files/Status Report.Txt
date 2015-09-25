@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Project [Hexapod_motherboard.PrjPcb]
+   Generated File[Bill of Materials-Hexapod_motherboard.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 10:03:06 On 2013.11.20.

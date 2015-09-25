@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: RC motor driver.PcbDoc   2013.10.24.  10:35:52
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : RC motor driver.TXT
+EIA File   : RC motor driver.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        28mil (0.7112mm)         Round          31               9.04 Inch (229.53 mm)
+T2        35.43mil (0.89992mm)     Round          16               7.25 Inch (184.22 mm)
+T3        44mil (1.1176mm)         Round          15               2.16 Inch (54.74 mm)
+T4        102.36mil (2.59994mm)    Round          4                0.59 Inch (15.00 mm)
+T5        137.8mil (3.50012mm)     Round          5                3.06 Inch (77.77 mm)
+---------------------------------------------------------------------------
+Totals                                            71               22.10 Inch (561.27 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

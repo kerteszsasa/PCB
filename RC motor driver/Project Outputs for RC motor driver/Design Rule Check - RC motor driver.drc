@@ -1,0 +1,173 @@
+Protel Design System Design Rule Check
+PCB File : C:\SASA\pcbdesigns\RC motor driver\RC motor driver.PcbDoc
+Date     : 2013.10.18.
+Time     : 17:15:10
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silkscreen Over Component Pads (Clearance=0mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Pad C3-2(435.567mil,4151mil)  Top Layer and 
+                     Pad C2-2(392.433mil,4151mil)  Top Layer
+   Violation between Pad D2-A(1716.937mil,3311mil)  Top Layer and 
+                     Pad R1-2(1774.63mil,3311mil)  Top Layer
+   Violation between Pad S1-1(1602.429mil,3880mil)  Top Layer and 
+                     Pad C16-2(1679mil,3899.63mil)  Top Layer
+   Violation between Pad P1-1(1889mil,3415mil)  Multi-Layer and 
+                     Pad D9-K(1888mil,3483.323mil)  Top Layer
+   Violation between Via (230mil,4084mil) Top Layer to Bottom Layer and 
+                     Pad U2-1(313mil,4065mil)  Multi-Layer
+   Violation between Via (754mil,4152mil) Top Layer to Bottom Layer and 
+                     Pad T6-G(770.415mil,4069.361mil)  Multi-Layer
+   Violation between Via (770.583mil,3786.417mil) Top Layer to Bottom Layer and 
+                     Pad U3-8(691.339mil,3786.417mil)  Bottom Layer
+   Violation between Pad D3-A(732.205mil,4586.614mil)  Bottom Layer and 
+                     Pad D1-K(793.228mil,4586.614mil)  Bottom Layer
+   Violation between Pad R12-2(1033.63mil,4336mil)  Bottom Layer and 
+                     Pad D8-K(977.913mil,4334mil)  Bottom Layer
+   Violation between Pad D10-K(1305.039mil,3956.693mil)  Bottom Layer and 
+                     Pad R14-2(1240.158mil,3897.638mil)  Bottom Layer
+   Violation between Via (511mil,5001mil) Top Layer to Bottom Layer and 
+                     Pad D4-A(567.008mil,4940.945mil)  Bottom Layer
+   Violation between Pad IC1-2(521.37mil,3838.583mil)  Bottom Layer and 
+                     Pad IC1-1(521.37mil,3870.079mil)  Bottom Layer
+   Violation between Pad IC1-3(521.37mil,3807.087mil)  Bottom Layer and 
+                     Pad IC1-2(521.37mil,3838.583mil)  Bottom Layer
+   Violation between Pad IC1-4(521.37mil,3775.591mil)  Bottom Layer and 
+                     Pad IC1-3(521.37mil,3807.087mil)  Bottom Layer
+   Violation between Pad IC1-5(521.37mil,3744.095mil)  Bottom Layer and 
+                     Pad IC1-4(521.37mil,3775.591mil)  Bottom Layer
+   Violation between Pad IC1-6(521.37mil,3712.599mil)  Bottom Layer and 
+                     Pad IC1-5(521.37mil,3744.095mil)  Bottom Layer
+   Violation between Pad IC1-7(521.37mil,3681.102mil)  Bottom Layer and 
+                     Pad IC1-6(521.37mil,3712.599mil)  Bottom Layer
+   Violation between Pad IC1-8(521.37mil,3649.606mil)  Bottom Layer and 
+                     Pad IC1-7(521.37mil,3681.102mil)  Bottom Layer
+   Violation between Pad IC1-10(434.756mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-9(466.252mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-11(403.26mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-10(434.756mil,3594.488mil)  Bottom Layer
+   Violation between Via (416mil,3667mil) Top Layer to Bottom Layer and 
+                     Pad IC1-11(403.26mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-12(371.764mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-11(403.26mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-13(340.268mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-12(371.764mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-14(308.772mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-13(340.268mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-15(277.276mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-14(308.772mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-16(245.78mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-15(277.276mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-18(190.661mil,3681.102mil)  Bottom Layer and 
+                     Pad IC1-17(190.661mil,3649.606mil)  Bottom Layer
+   Violation between Pad IC1-19(190.661mil,3712.599mil)  Bottom Layer and 
+                     Pad IC1-18(190.661mil,3681.102mil)  Bottom Layer
+   Violation between Pad IC1-20(190.661mil,3744.095mil)  Bottom Layer and 
+                     Pad IC1-19(190.661mil,3712.599mil)  Bottom Layer
+   Violation between Pad IC1-21(190.661mil,3775.591mil)  Bottom Layer and 
+                     Pad IC1-20(190.661mil,3744.095mil)  Bottom Layer
+   Violation between Pad IC1-22(190.661mil,3807.087mil)  Bottom Layer and 
+                     Pad IC1-21(190.661mil,3775.591mil)  Bottom Layer
+   Violation between Pad IC1-23(190.661mil,3838.583mil)  Bottom Layer and 
+                     Pad IC1-22(190.661mil,3807.087mil)  Bottom Layer
+   Violation between Via (265mil,3828mil) Top Layer to Bottom Layer and 
+                     Pad IC1-23(190.661mil,3838.583mil)  Bottom Layer
+   Violation between Pad IC1-24(190.661mil,3870.079mil)  Bottom Layer and 
+                     Pad IC1-23(190.661mil,3838.583mil)  Bottom Layer
+   Violation between Pad IC1-26(277.276mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-25(245.78mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-27(308.772mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-26(277.276mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-28(340.268mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-27(308.772mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-29(371.764mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-28(340.268mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-30(403.26mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-29(371.764mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-31(434.756mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-30(403.26mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-32(466.252mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-31(434.756mil,3925.197mil)  Bottom Layer
+Rule Violations :41
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+   Violation between Hole Size Constraint: Pad Free-0(1870.079mil,4232.283mil)  Multi-Layer
+   Violation between Hole Size Constraint: Pad Free-0(1870.079mil,4429.134mil)  Multi-Layer
+   Violation between Hole Size Constraint: Pad Free-0(1870.079mil,4625.984mil)  Multi-Layer
+   Violation between Hole Size Constraint: Pad Free-0(1870.079mil,4035.433mil)  Multi-Layer
+   Violation between Hole Size Constraint: Via (415mil,3407.079mil) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint: Via (903.386mil,5095.047mil) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint: Via (1365mil,5094.221mil) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint: Via (872.415mil,3411.44mil) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint: Via (1332.083mil,3411.44mil) Top Layer to Bottom Layer
+Rule Violations :9
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=393.701mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+   Violation between Pad IC1-3(521.37mil,3807.087mil)  Bottom Layer and 
+                     Pad IC1-2(521.37mil,3838.583mil)  Bottom Layer
+   Violation between Pad IC1-4(521.37mil,3775.591mil)  Bottom Layer and 
+                     Pad IC1-3(521.37mil,3807.087mil)  Bottom Layer
+   Violation between Pad IC1-5(521.37mil,3744.095mil)  Bottom Layer and 
+                     Pad IC1-4(521.37mil,3775.591mil)  Bottom Layer
+   Violation between Pad IC1-6(521.37mil,3712.599mil)  Bottom Layer and 
+                     Pad IC1-5(521.37mil,3744.095mil)  Bottom Layer
+   Violation between Pad IC1-7(521.37mil,3681.102mil)  Bottom Layer and 
+                     Pad IC1-6(521.37mil,3712.599mil)  Bottom Layer
+   Violation between Pad IC1-10(434.756mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-9(466.252mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-11(403.26mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-10(434.756mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-12(371.764mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-11(403.26mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-14(308.772mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-13(340.268mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-15(277.276mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-14(308.772mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-16(245.78mil,3594.488mil)  Bottom Layer and 
+                     Pad IC1-15(277.276mil,3594.488mil)  Bottom Layer
+   Violation between Pad IC1-18(190.661mil,3681.102mil)  Bottom Layer and 
+                     Pad IC1-17(190.661mil,3649.606mil)  Bottom Layer
+   Violation between Pad IC1-19(190.661mil,3712.599mil)  Bottom Layer and 
+                     Pad IC1-18(190.661mil,3681.102mil)  Bottom Layer
+   Violation between Pad IC1-20(190.661mil,3744.095mil)  Bottom Layer and 
+                     Pad IC1-19(190.661mil,3712.599mil)  Bottom Layer
+   Violation between Pad IC1-21(190.661mil,3775.591mil)  Bottom Layer and 
+                     Pad IC1-20(190.661mil,3744.095mil)  Bottom Layer
+   Violation between Pad IC1-22(190.661mil,3807.087mil)  Bottom Layer and 
+                     Pad IC1-21(190.661mil,3775.591mil)  Bottom Layer
+   Violation between Pad IC1-29(371.764mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-28(340.268mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-30(403.26mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-29(371.764mil,3925.197mil)  Bottom Layer
+   Violation between Pad IC1-32(466.252mil,3925.197mil)  Bottom Layer and 
+                     Pad IC1-31(434.756mil,3925.197mil)  Bottom Layer
+Rule Violations :19
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 69
+Time Elapsed        : 00:00:01

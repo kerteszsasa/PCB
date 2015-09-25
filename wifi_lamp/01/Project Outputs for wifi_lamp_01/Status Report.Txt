@@ -1,0 +1,13 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [wifi_lamp_01.PrjPcb]
+   Generated File[wifi_lamp_01.GTL]
+   Generated File[wifi_lamp_01.RUL]
+   Generated File[wifi_lamp_01.EXTREP]
+   Generated File[wifi_lamp_01.REP]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 16:30:49 On 2015.05.14.

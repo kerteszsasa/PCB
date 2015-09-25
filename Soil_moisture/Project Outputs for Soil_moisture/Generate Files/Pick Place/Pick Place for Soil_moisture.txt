@@ -1,0 +1,73 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+U1_4       ANALOG_SOT23-5    3425.197mil   8716.319mil   3425.197mil   8715.787mil   3387.795mil   8768.031mil  B        270.00 MCP6001        
+C1_4       FP_0603_CAP_080   3346.457mil   8715.787mil   3346.457mil   8715.787mil   3346.457mil   8680.354mil  T         90.00 4.7uF          
+C2_4       FP_0603_CAP_080   3582.677mil   8715.787mil   3582.677mil   8715.787mil   3582.677mil    8751.22mil  T        270.00 100nF          
+C3_4       FP_0603_CAP_080   3661.417mil   8715.787mil   3661.417mil   8715.787mil   3661.417mil    8751.22mil  T        270.00 4.7uF          
+C4_4       FP_0603_CAP_080   3779.528mil   8715.787mil   3779.528mil   8715.787mil   3779.528mil   8680.354mil  B         90.00 100nF          
+C5_4       FP_0603_CAP_080   3267.717mil   8715.787mil   3267.717mil   8715.787mil   3267.717mil   8680.354mil  T         90.00 100nF          
+LDO1_4     SUPPLY_SOT23-5    3464.567mil   8715.787mil   3464.567mil   8715.787mil   3501.969mil   8768.031mil  T        270.00 LP2980AIM5-3.3 
+P1_4       HDR1X3            3503.937mil   8873.268mil   3403.937mil   8873.268mil   3403.937mil   8873.268mil  T        360.00 Header 3       
+R1_4       FP_0603_RES       3267.717mil   8676.417mil   3267.716mil   8676.417mil   3232.284mil   8676.417mil  B        360.00 75K            
+R2_4       FP_0603_RES       3267.717mil   8759.843mil   3267.716mil   8759.843mil   3232.284mil   8759.843mil  B        360.00 220K           
+R3_4       FP_0603_RES       3740.157mil   8715.788mil   3740.157mil   8715.787mil   3740.157mil   8680.354mil  T         90.00 1K             
+R4_4       FP_0603_RES       3543.307mil   8720.472mil   3543.307mil   8720.472mil   3543.307mil   8755.905mil  B        270.00 75K            
+R5_4       FP_0603_RES       3622.047mil   8715.787mil   3622.047mil   8715.787mil   3622.047mil    8751.22mil  B        270.00 1K             
+R6_4       FP_0603_RES       3700.787mil   8715.787mil   3700.787mil   8715.787mil   3700.787mil    8751.22mil  B        270.00 75K            
+U1_3       ANALOG_SOT23-5    2637.795mil   8716.319mil   2637.795mil   8715.787mil   2600.394mil   8768.031mil  B        270.00 MCP6001        
+C1_3       FP_0603_CAP_080   2559.055mil   8715.787mil   2559.055mil   8715.787mil   2559.055mil   8680.354mil  T         90.00 4.7uF          
+C2_3       FP_0603_CAP_080   2795.276mil   8715.787mil   2795.276mil   8715.787mil   2795.276mil    8751.22mil  T        270.00 100nF          
+C3_3       FP_0603_CAP_080   2874.016mil   8715.787mil   2874.016mil   8715.787mil   2874.016mil    8751.22mil  T        270.00 4.7uF          
+C4_3       FP_0603_CAP_080   2992.126mil   8715.787mil   2992.126mil   8715.787mil   2992.126mil   8680.354mil  B         90.00 100nF          
+C5_3       FP_0603_CAP_080   2480.315mil   8715.787mil   2480.315mil   8715.787mil   2480.315mil   8680.354mil  T         90.00 100nF          
+LDO1_3     SUPPLY_SOT23-5    2677.165mil   8715.787mil   2677.165mil   8715.787mil   2714.567mil   8768.031mil  T        270.00 LP2980AIM5-3.3 
+P1_3       HDR1X3            2716.535mil   8873.268mil   2616.535mil   8873.268mil   2616.535mil   8873.268mil  T        360.00 Header 3       
+R1_3       FP_0603_RES       2480.315mil   8676.417mil   2480.315mil   8676.417mil   2444.882mil   8676.417mil  B        360.00 75K            
+R2_3       FP_0603_RES       2480.315mil   8759.843mil   2480.315mil   8759.843mil   2444.882mil   8759.843mil  B        360.00 220K           
+R3_3       FP_0603_RES       2952.756mil   8715.788mil   2952.756mil   8715.787mil   2952.756mil   8680.354mil  T         90.00 1K             
+R4_3       FP_0603_RES       2755.905mil   8720.472mil   2755.905mil   8720.472mil   2755.905mil   8755.905mil  B        270.00 75K            
+R5_3       FP_0603_RES       2834.646mil   8715.787mil   2834.646mil   8715.787mil   2834.646mil    8751.22mil  B        270.00 1K             
+R6_3       FP_0603_RES       2913.386mil   8715.787mil   2913.386mil   8715.787mil   2913.386mil    8751.22mil  B        270.00 75K            
+U1_2       ANALOG_SOT23-5    1850.393mil   8721.004mil   1850.394mil   8720.472mil   1812.992mil   8772.717mil  B        270.00 MCP6001        
+C1_2       FP_0603_CAP_080   1771.653mil   8720.472mil   1771.653mil   8720.472mil   1771.653mil   8685.039mil  T         90.00 4.7uF          
+C2_2       FP_0603_CAP_080   2007.874mil   8720.472mil   2007.874mil   8720.472mil   2007.874mil   8755.906mil  T        270.00 100nF          
+C3_2       FP_0603_CAP_080   2086.614mil   8720.472mil   2086.614mil   8720.472mil   2086.614mil   8755.906mil  T        270.00 4.7uF          
+C4_2       FP_0603_CAP_080   2204.724mil   8720.472mil   2204.724mil   8720.472mil   2204.724mil   8685.039mil  B         90.00 100nF          
+C5_2       FP_0603_CAP_080   1692.913mil   8720.472mil   1692.913mil   8720.472mil   1692.913mil   8685.039mil  T         90.00 100nF          
+LDO1_2     SUPPLY_SOT23-5    1889.764mil   8720.472mil   1889.764mil   8720.472mil   1927.165mil   8772.717mil  T        270.00 LP2980AIM5-3.3 
+P1_2       HDR1X3            1929.134mil   8877.953mil   1829.134mil   8877.953mil   1829.134mil   8877.953mil  T        360.00 Header 3       
+R1_2       FP_0603_RES       1692.913mil   8681.102mil   1692.913mil   8681.102mil    1657.48mil   8681.102mil  B        360.00 75K            
+R2_2       FP_0603_RES       1692.913mil   8764.528mil   1692.913mil   8764.528mil    1657.48mil   8764.528mil  B        360.00 220K           
+R3_2       FP_0603_RES       2165.354mil   8720.472mil   2165.354mil   8720.472mil   2165.354mil   8685.039mil  T         90.00 1K             
+R4_2       FP_0603_RES       1968.504mil   8725.157mil   1968.504mil   8725.157mil   1968.504mil    8760.59mil  B        270.00 75K            
+R5_2       FP_0603_RES       2047.244mil   8720.472mil   2047.244mil   8720.472mil   2047.244mil   8755.905mil  B        270.00 1K             
+R6_2       FP_0603_RES       2125.984mil   8720.472mil   2125.984mil   8720.472mil   2125.984mil   8755.905mil  B        270.00 75K            
+U1_1       ANALOG_SOT23-5    1062.992mil   8716.319mil   1062.992mil   8715.787mil   1025.591mil   8768.031mil  B        270.00 MCP6001        
+C1_1       FP_0603_CAP_080    984.252mil   8715.787mil    984.252mil   8715.787mil    984.252mil   8680.354mil  T         90.00 4.7uF          
+C2_1       FP_0603_CAP_080   1220.473mil   8715.787mil   1220.473mil   8715.787mil   1220.473mil    8751.22mil  T        270.00 100nF          
+C3_1       FP_0603_CAP_080   1299.213mil   8715.787mil   1299.213mil   8715.787mil   1299.213mil    8751.22mil  T        270.00 4.7uF          
+C4_1       FP_0603_CAP_080   1417.323mil   8715.787mil   1417.323mil   8715.787mil   1417.323mil   8680.354mil  B         90.00 100nF          
+C5_1       FP_0603_CAP_080    905.512mil   8715.787mil    905.512mil   8715.787mil    905.512mil   8680.354mil  T         90.00 100nF          
+LDO1_1     SUPPLY_SOT23-5    1102.362mil   8715.787mil   1102.362mil   8715.787mil   1139.764mil   8768.031mil  T        270.00 LP2980AIM5-3.3 
+P1_1       HDR1X3            1141.732mil   8873.268mil   1041.732mil   8873.268mil   1041.732mil   8873.268mil  T        360.00 Header 3       
+R1_1       FP_0603_RES        905.512mil   8676.417mil    905.512mil   8676.417mil    870.079mil   8676.417mil  B        360.00 75K            
+R2_1       FP_0603_RES        905.512mil   8759.843mil    905.512mil   8759.843mil    870.079mil   8759.843mil  B        360.00 220K           
+R3_1       FP_0603_RES       1377.953mil   8715.788mil   1377.953mil   8715.787mil   1377.953mil   8680.354mil  T         90.00 1K             
+R4_1       FP_0603_RES       1181.102mil   8720.472mil   1181.102mil   8720.472mil   1181.102mil   8755.905mil  B        270.00 75K            
+R5_1       FP_0603_RES       1259.842mil   8715.787mil   1259.842mil   8715.787mil   1259.842mil    8751.22mil  B        270.00 1K             
+R6_1       FP_0603_RES       1338.583mil   8715.787mil   1338.583mil   8715.787mil   1338.583mil    8751.22mil  B        270.00 75K            
+R6         FP_0603_RES        551.181mil   8715.787mil    551.181mil   8715.787mil    551.181mil    8751.22mil  B        270.00 75K            
+R5         FP_0603_RES        472.441mil   8715.787mil    472.441mil   8715.787mil    472.441mil    8751.22mil  B        270.00 1K             
+R4         FP_0603_RES        393.701mil   8720.472mil    393.701mil   8720.472mil    393.701mil   8755.905mil  B        270.00 75K            
+R3         FP_0603_RES        590.551mil   8715.788mil    590.551mil   8715.787mil    590.551mil   8680.354mil  T         90.00 1K             
+R2         FP_0603_RES         118.11mil   8759.843mil     118.11mil   8759.843mil     82.677mil   8759.843mil  B        360.00 220K           
+R1         FP_0603_RES         118.11mil   8676.417mil     118.11mil   8676.417mil     82.677mil   8676.417mil  B        360.00 75K            
+P1         HDR1X3             354.331mil   8873.268mil    254.331mil   8873.268mil    254.331mil   8873.268mil  T        360.00 Header 3       
+LDO1       SUPPLY_SOT23-5     314.961mil   8715.787mil    314.961mil   8715.787mil    352.362mil   8768.031mil  T        270.00 LP2980AIM5-3.3 
+C5         FP_0603_CAP_080     118.11mil   8715.787mil     118.11mil   8715.787mil     118.11mil   8680.354mil  T         90.00 100nF          
+C4         FP_0603_CAP_080    629.921mil   8715.787mil    629.921mil   8715.787mil    629.921mil   8680.354mil  B         90.00 100nF          
+C3         FP_0603_CAP_080    511.811mil   8715.787mil    511.811mil   8715.787mil    511.811mil    8751.22mil  T        270.00 4.7uF          
+C2         FP_0603_CAP_080    433.071mil   8715.787mil    433.071mil   8715.787mil    433.071mil    8751.22mil  T        270.00 100nF          
+C1         FP_0603_CAP_080     196.85mil   8715.787mil     196.85mil   8715.787mil     196.85mil   8680.354mil  T         90.00 4.7uF          
+U1         ANALOG_SOT23-5      275.59mil   8716.319mil    275.591mil   8715.787mil    238.189mil   8768.031mil  B        270.00 MCP6001        
+

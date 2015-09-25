@@ -1,0 +1,117 @@
+Protel Design System Design Rule Check
+PCB File : C:\SASA\pcbdesigns\LED_POV\LED_POV.PcbDoc
+Date     : 2014.11.12.
+Time     : 16:24:30
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silkscreen Over Component Pads (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Pad L1-K1(-29.527mil,687.346mil)  Top Layer and 
+                     Pad L2-A(-29.527mil,723.882mil)  Top Layer
+   Violation between Pad L1-K2(29.528mil,687.346mil)  Top Layer and 
+                     Pad L2-K3(29.528mil,723.882mil)  Top Layer
+   Violation between Pad L3-A(-29.527mil,793.882mil)  Top Layer and 
+                     Pad L2-K1(-29.527mil,757.346mil)  Top Layer
+   Violation between Pad L3-K3(29.528mil,793.882mil)  Top Layer and 
+                     Pad L2-K2(29.528mil,757.346mil)  Top Layer
+   Violation between Pad L18-K1(-29.527mil,1877.732mil)  Top Layer and 
+                     Pad L19-A(-29.527mil,1914.323mil)  Top Layer
+   Violation between Pad L18-K2(29.528mil,1877.732mil)  Top Layer and 
+                     Pad L19-K3(29.528mil,1914.323mil)  Top Layer
+   Violation between Pad L4-A(-29.527mil,863.882mil)  Top Layer and 
+                     Pad L3-K1(-29.527mil,827.346mil)  Top Layer
+   Violation between Pad L4-K3(29.528mil,863.882mil)  Top Layer and 
+                     Pad L3-K2(29.528mil,827.346mil)  Top Layer
+   Violation between Pad L13-K1(-29.527mil,1527.732mil)  Top Layer and 
+                     Pad L14-A(-29.527mil,1564.268mil)  Top Layer
+   Violation between Pad L13-K2(29.528mil,1527.732mil)  Top Layer and 
+                     Pad L14-K3(29.528mil,1564.268mil)  Top Layer
+   Violation between Pad L15-A(-29.527mil,1634.268mil)  Top Layer and 
+                     Pad L14-K1(-29.527mil,1597.732mil)  Top Layer
+   Violation between Pad L15-K3(29.528mil,1634.268mil)  Top Layer and 
+                     Pad L14-K2(29.528mil,1597.732mil)  Top Layer
+   Violation between Pad L16-K1(-29.527mil,1737.732mil)  Top Layer and 
+                     Pad L17-A(-29.527mil,1774.268mil)  Top Layer
+   Violation between Pad L16-K2(29.528mil,1737.732mil)  Top Layer and 
+                     Pad L17-K3(29.528mil,1774.268mil)  Top Layer
+   Violation between Pad L18-A(-29.527mil,1844.268mil)  Top Layer and 
+                     Pad L17-K1(-29.527mil,1807.732mil)  Top Layer
+   Violation between Pad L18-K3(29.528mil,1844.268mil)  Top Layer and 
+                     Pad L17-K2(29.528mil,1807.732mil)  Top Layer
+   Violation between Pad L8-K1(-29.527mil,1177.732mil)  Top Layer and 
+                     Pad L9-A(-29.527mil,1214.268mil)  Top Layer
+   Violation between Pad L8-K2(29.528mil,1177.732mil)  Top Layer and 
+                     Pad L9-K3(29.528mil,1214.268mil)  Top Layer
+   Violation between Pad L10-A(-29.527mil,1284.323mil)  Top Layer and 
+                     Pad L9-K1(-29.527mil,1247.732mil)  Top Layer
+   Violation between Pad L10-K3(29.528mil,1284.323mil)  Top Layer and 
+                     Pad L9-K2(29.528mil,1247.732mil)  Top Layer
+   Violation between Pad L5-K1(-29.527mil,967.346mil)  Top Layer and 
+                     Pad L6-A(-29.527mil,1003.882mil)  Top Layer
+   Violation between Pad L5-K2(29.528mil,967.346mil)  Top Layer and 
+                     Pad L6-K3(29.528mil,1003.882mil)  Top Layer
+   Violation between Pad L7-A(-29.527mil,1074.268mil)  Top Layer and 
+                     Pad L6-K1(-29.527mil,1037.347mil)  Top Layer
+   Violation between Pad L7-K3(29.528mil,1074.268mil)  Top Layer and 
+                     Pad L6-K2(29.528mil,1037.347mil)  Top Layer
+   Violation between Pad L10-K1(-29.527mil,1317.787mil)  Top Layer and 
+                     Pad L11-A(-29.527mil,1354.268mil)  Top Layer
+   Violation between Pad L10-K2(29.528mil,1317.787mil)  Top Layer and 
+                     Pad L11-K3(29.528mil,1354.268mil)  Top Layer
+   Violation between Pad L12-A(-29.527mil,1424.268mil)  Top Layer and 
+                     Pad L11-K1(-29.527mil,1387.732mil)  Top Layer
+   Violation between Pad L12-K3(29.528mil,1424.268mil)  Top Layer and 
+                     Pad L11-K2(29.528mil,1387.732mil)  Top Layer
+   Violation between Pad L15-K1(-29.527mil,1667.732mil)  Top Layer and 
+                     Pad L16-A(-29.527mil,1704.268mil)  Top Layer
+   Violation between Pad L15-K2(29.528mil,1667.732mil)  Top Layer and 
+                     Pad L16-K3(29.528mil,1704.268mil)  Top Layer
+   Violation between Pad L7-K1(-29.527mil,1107.732mil)  Top Layer and 
+                     Pad L8-A(-29.527mil,1144.268mil)  Top Layer
+   Violation between Pad L7-K2(29.528mil,1107.732mil)  Top Layer and 
+                     Pad L8-K3(29.528mil,1144.268mil)  Top Layer
+   Violation between Pad L12-K1(-29.527mil,1457.732mil)  Top Layer and 
+                     Pad L13-A(-29.527mil,1494.268mil)  Top Layer
+   Violation between Pad L12-K2(29.528mil,1457.732mil)  Top Layer and 
+                     Pad L13-K3(29.528mil,1494.268mil)  Top Layer
+   Violation between Pad L4-K1(-29.527mil,897.346mil)  Top Layer and 
+                     Pad L5-A(-29.527mil,933.882mil)  Top Layer
+   Violation between Pad L4-K2(29.528mil,897.346mil)  Top Layer and 
+                     Pad L5-K3(29.528mil,933.882mil)  Top Layer
+Rule Violations :36
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+   Violation between Hole Size Constraint: Pad Free-0(0mil,0mil)  Multi-Layer
+Rule Violations :1
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 37
+Time Elapsed        : 00:00:00

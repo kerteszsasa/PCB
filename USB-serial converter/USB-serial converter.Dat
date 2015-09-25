@@ -1,0 +1,11 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~USB-serial converter.PrjPcb|ReportField=ProjectFullPath~P:\PCB\USB-serial converter\USB-serial converter.PrjPcb|ReportField=Title~Bill of Materials For Project [USB-serial converter.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~16|ReportField=ReportTime~0:37:57|ReportField=ReportDate~2012.05.23.|ReportField=ReportDateTime~2012.05.23. 0:37:57|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2012.05.23.|ReportField=CurrentTime~0:37:50|ReportField=Date~|ReportField=DocumentFullPathAndName~P:\PCB\USB-serial converter\USB-serial converter.SchDoc|ReportField=DocumentName~USB-serial converter.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2012.05.23.|ReportField=Organization~|ReportField=ProjectName~USB-serial converter.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~USB-serial converter.PrjPcb|ReportField=DataSourceFullPath~P:\PCB\USB-serial converter\USB-serial converter.PrjPcb
+mini USB|mini USB|C1|USB/SM0.8-6H5|mini USB|1
+Cap Semi|Capacitor (Semiconductor SIM Model)|C2, C3, C4, C5, C6|RESC2012N|Cap Semi|5
+LED3|Typical BLUE SiC LED|D1, D2|RESC2012N|LED3|2
+Jumper|Header, 3-Pin|P1|HDR1X3|Header 3|1
+Header 4|Header, 4-Pin|P2|HDR1X4|Header 4|1
+Header 2|Header, 2-Pin|P3|HDR1X2|Header 2|1
+Res2|Resistor|R1, R2|RESC2012N|Res2|2
+Res2|Resistor|R3|RESC1608L|Res2|1
+IC_FT232RL|FT232R USB UART|U1|SSOP-28|IC_FT232RL|1
+Volt Reg 3V3|Voltage Regulator|VR1|SOT223-4N|Volt Reg|1

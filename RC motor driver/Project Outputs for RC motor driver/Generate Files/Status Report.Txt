@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Project [RC motor driver.PrjPcb]
+   Generated File[Bill of Materials-RC motor driver.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 10:35:55 On 2013.10.24.
