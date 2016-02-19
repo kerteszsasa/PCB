@@ -1,0 +1,11 @@
+Output: Generates pick and place files csv
+Type  : Pick Place
+From  : PCB Document [Surf_RF_transceiver.PcbDoc]
+   Generated File[Pick Place for Surf_RF_transceiver.txt]
+   Generated File[Pick Place for Surf_RF_transceiver.csv]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 14:13:29 On 2016.02.19.
