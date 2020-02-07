@@ -1,0 +1,21 @@
+Output: Gerber Files
+Type  : Gerber
+From  : PCB Document [Led_orb.PcbDoc]
+   Generated File[Led_orb.GTL]
+   Generated File[Led_orb.GBL]
+   Generated File[Led_orb.GTO]
+   Generated File[Led_orb.GTP]
+   Generated File[Led_orb.GTS]
+   Generated File[Led_orb.GBS]
+   Generated File[Led_orb.GBP]
+   Generated File[Led_orb.GBO]
+   Generated File[Led_orb.GKO]
+   Generated File[Led_orb.RUL]
+   Generated File[Led_orb.EXTREP]
+   Generated File[Led_orb.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 11:07:46 On 2020.02.07.
