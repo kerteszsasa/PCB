@@ -1,0 +1,11 @@
+Output: Generates pick and place files csv
+Type  : Pick Place
+From  : PCB Document [PPM_USB.PcbDoc]
+   Generated File[Pick Place for PPM_USB.txt]
+   Generated File[Pick Place for PPM_USB.csv]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 14:54:53 On 2019.04.29.

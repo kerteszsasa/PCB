@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\SANYI\SASA\PCB\PPM_USB\PPM_USB.PcbDoc
+LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=ppm_usb-plated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_NonPlated_Thru_Holes|DrillFile=ppm_usb-nonplated.txt|DrillLayers=gtl,gbl

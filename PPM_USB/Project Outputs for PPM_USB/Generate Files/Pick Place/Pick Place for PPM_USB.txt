@@ -1,0 +1,19 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+R6         FP_0603_RES           3755mil       3345mil       3755mil       3345mil   3790.433mil       3345mil  T        180.00 10K            
+R5         FP_0603_RES           4215mil       3075mil       4215mil       3075mil       4215mil   3039.567mil  B         90.00 10K            
+Z2         FP_SOD-123            4410mil       3340mil       4410mil       3340mil       4410mil    3404.37mil  B        270.00 3V6            
+Z1         FP_SOD-123            4495mil       3340mil       4495mil       3340mil       4495mil    3404.37mil  B        270.00 3V6            
+Y1         FP_CRYSTAL_HC49_TH    4185.01mil       2910mil       4185mil       2910mil     4087.5mil       2910mil  T        360.00 12Mhz          
+R4         FP_0603_RES           4525mil       3075mil       4525mil       3075mil       4525mil   3039.567mil  B         90.00 1K5            
+R2         FP_0603_RES           4215mil       3210mil       4215mil       3210mil       4215mil   3245.433mil  B        270.00 68R            
+C7         FP_0603_CAP_080       3920mil       2880mil       3920mil       2880mil       3920mil   2844.567mil  T         90.00 27pF           
+U2         DIGITAL_SOIC20W       4120mil       3280mil       4120mil       3280mil   4314.488mil       3055mil  T        270.00 ATTiny2313     
+R1         FP_0603_RES           4580mil       2880mil       4580mil       2880mil       4580mil   2844.567mil  T         90.00 390R           
+D1         FP_0603_LED_G         4520mil       2885mil       4520mil       2885mil       4520mil   2920.433mil  T        270.00 GREEN          
+C13        FP_0805_CAP_085       4520mil       3470mil       4520mil       3470mil    4480.63mil       3470mil  T        360.00 22uF           
+C8         FP_0603_CAP_080       4455mil       2885mil       4455mil       2885mil       4455mil   2849.567mil  T         90.00 27pF           
+R3         FP_0603_RES           4290mil       3215mil       4290mil       3215mil       4290mil   3250.433mil  B        270.00 68R            
+C6         FP_0603_CAP_080       3885mil       2980mil       3885mil       2980mil   3849.567mil       2980mil  T        360.00 100nF          
+C21        USB/SM0.8-6H5     4675.624mil   3172.018mil   4675.624mil   3172.018mil   4565.387mil   3109.026mil  T          0.00 mini USB       
+
