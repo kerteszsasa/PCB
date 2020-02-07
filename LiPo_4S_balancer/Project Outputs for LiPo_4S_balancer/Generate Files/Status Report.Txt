@@ -1,0 +1,11 @@
+Output: Generates pick and place files csv
+Type  : Pick Place
+From  : PCB Document [LiPo_4S_balancer.PcbDoc]
+   Generated File[Pick Place for LiPo_4S_balancer.txt]
+   Generated File[Pick Place for LiPo_4S_balancer.csv]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 16:49:54 On 2019.06.14.
