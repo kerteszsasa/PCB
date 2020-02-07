@@ -1,0 +1,21 @@
+Output: Gerber Files
+Type  : Gerber
+From  : PCB Document [buzzerWithBattery.PcbDoc]
+   Generated File[buzzerWithBattery.GTL]
+   Generated File[buzzerWithBattery.GBL]
+   Generated File[buzzerWithBattery.GTO]
+   Generated File[buzzerWithBattery.GTP]
+   Generated File[buzzerWithBattery.GTS]
+   Generated File[buzzerWithBattery.GBS]
+   Generated File[buzzerWithBattery.GBP]
+   Generated File[buzzerWithBattery.GBO]
+   Generated File[buzzerWithBattery.GKO]
+   Generated File[buzzerWithBattery.RUL]
+   Generated File[buzzerWithBattery.EXTREP]
+   Generated File[buzzerWithBattery.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 17:51:58 On 2020.01.15.
