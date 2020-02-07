@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Labortápegység_v1.PcbDoc   2015.11.03.  10:10:00
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : Labortápegység_v1-Plated.TXT
+EIA File   : Labortápegység_v1.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        16mil (0.4064mm)         Round          18               6.45 Inch (163.90 mm)
+T2        28mil (0.7112mm)         Round          3                1.29 Inch (32.88 mm)
+T3        39.4mil (1.00076mm)      Round          16               3.60 Inch (91.41 mm)
+---------------------------------------------------------------------------
+Totals                                            37               11.35 Inch (288.19 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
