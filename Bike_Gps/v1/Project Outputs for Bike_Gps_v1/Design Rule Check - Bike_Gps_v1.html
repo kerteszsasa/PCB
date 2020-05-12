@@ -1,0 +1,410 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body {
+			font-family : verdana;
+		}
+		td, th {
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;
+		}
+		th {
+			background-color : #A6CAF0;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+		}
+		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
+		}
+
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
+		{
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top
+
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
+		.front_matter_column1 {
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
+		}
+		
+		.front_matter_column2 {
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
+		}
+		.front_matter_column3 {
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
+		}
+		
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD15\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td Style="width:70%">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">2020.05.12.</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">18:46:31</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc" class="file"><acronym title="C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc">C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td Style="Width:30%">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">8</td></tr>
+</table>
+</td>
+</table>
+<hr><a name="ID2VHAKI0QBBCEM24S432O4Z52JBS3FHUU55GDIRGVNAEBX1P03AIM"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1OGMLRZF0ECSLWKFFQGH0T1PHKJTFXWXVE1Q5FDGVR1TPLK3OFOM">Minimum Solder Mask Sliver (Gap=0mil) (InComponent('U4') or
+InComponent('Q1')   or
+InComponent('IC1')),(InComponent('U4') or
+InComponent('Q1')   or
+InComponent('IC1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2LOTNXNYXI2DG1RUMW1GIADBSIB3OFCJM4U0Y2CYOCUFHQTGPXXP">Clearance Constraint (Gap=0mil) (InComponent('U4') or
+InComponent('Q1')   or
+InComponent('IC1')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV0JUI10IIJPPP1YM5HIXPJEDYN20MKDNW4WFXCKWECL4YHVHNYQ">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDK0KLLHGMIOTYFQXKVWDZBN1GDWYB2SZCUSIZPPNSNIQAW3UTHYB">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDF0GAREHP30XBN1EVZ44E4KIVNFZBEZEFB13GZUJSFSQO2W3DQ1J">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXXZDQ0OZVT0BGE4DY3WWT21TTCPO0DDWYSXM4F2DFZW5ZWB2YVG">Silk To Solder Mask (Clearance=0mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMDSC5A51CDGCMUF4A1B0CIM1ZIIYOCOX2DWIGKDSC0JNS0KHRJP">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFSZJN2VFIPW1E55LLJTXMSLFQIEHPBHNFIZMXDHWQCPQV0XZQMNK">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNDYA2HM3LEDWKPFOMQMKRDP3HCAK2CFRYTTQ1KF5KU2V3RPMMRVD">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNNIGNSYJR3DFBW354PSD30D5MJFR0XNNC4RUEPDRBQG2IIGMLYHM">Hole Size Constraint (Min=0.984mil) (Max=196.85mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEZZD2EBVKXAKOGHIGRL2UIWXHJVI0EVZSC12EQKRKMXSN2DDD2LJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDN43REJNUQMRMBINU23XGYRRSFIBFMGQXZ25O4EKJGXIQAFUDHO2F">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQXDKZDEB2NKYJ02BRA2GFDPT2PBFXENWPKIYJ5GLNUMEBKEAU1GJ">Routing Via (MinHoleWidth=16mil) (MaxHoleWidth=28mil) (PreferredHoleWidth=16mil) (MinWidth=32mil) (MaxWidth=50mil) (PreferedWidth=32mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEHWRW2N0MDLRNQRNQPGYS0A0WIIFKHXEAU3P0AKDRQBJIAUX5DWP">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMC1OBSLFKEE5PVYTMGVJ1PHIRGZ0PJTPB3PQJGIZJP2QCUZ41UZ">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZXVKR4BUW2LMOCG54DH0X5F44CGFR2T5WHTN0DHJKJXKUIQAZLDF">Width Constraint (Min=8mil) (Max=100mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKP3BLKLIZ5YMPDUBZ5S3HU1TRHYNKPFX34KJD0BIY24BCHZDXXYM">Clearance Constraint (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDELC44TIU34PKO2GYWB3GLEGAFHLYSONJLYH5Z4NHD5DFRUVPCOZN">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDG3CWXJMC1MLLPPTFNZRYFDFONFG0R0X1STV5SJFUN00ZL2J3GWC">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKCPLYBWTR31DKOST4TVYKDRX0IQEJ15YZ1F0FAFTS3LM2DXCNH">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">8</td>
+</tr>
+</table><br><hr><a name="IDMDSC5A51CDGCMUF4A1B0CIM1ZIIYOCOX2DWIGKDSC0JNS0KHRJP"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5381.356mil|Location2.Y=5409.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5381.356mil|Location2.Y=5409.041mil|Absolute=True">Pad C5-4(-716.535mil,1425.199mil)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5349.86mil|Location2.Y=5377.545mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5349.86mil|Location2.Y=5377.545mil|Absolute=True">Pad C5-5(-716.535mil,1393.703mil)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5412.852mil|Location2.Y=5440.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5412.852mil|Location2.Y=5440.537mil|Absolute=True">Pad C5-3(-716.535mil,1456.695mil)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5381.356mil|Location2.Y=5409.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5381.356mil|Location2.Y=5409.041mil|Absolute=True">Pad C5-4(-716.535mil,1425.199mil)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5444.348mil|Location2.Y=5472.033mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5444.348mil|Location2.Y=5472.033mil|Absolute=True">Pad C5-2(-716.535mil,1488.191mil)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5412.852mil|Location2.Y=5440.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5412.852mil|Location2.Y=5440.537mil|Absolute=True">Pad C5-3(-716.535mil,1456.695mil)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5475.842mil|Location2.Y=5503.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5475.842mil|Location2.Y=5503.527mil|Absolute=True">Pad C5-1(-716.535mil,1519.685mil)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5444.348mil|Location2.Y=5472.033mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7098.221mil|Location2.X=7196.772mil|Location1.Y=5444.348mil|Location2.Y=5472.033mil|Absolute=True">Pad C5-2(-716.535mil,1488.191mil)  Top Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDN43REJNUQMRMBINU23XGYRRSFIBFMGQXZ25O4EKJGXIQAFUDHO2F"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7127.559mil|Location2.X=7159.559mil|Location1.Y=5235.497mil|Location2.Y=5267.497mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7127.559mil|Location2.X=7159.559mil|Location1.Y=5235.497mil|Location2.Y=5267.497mil|Absolute=True">Via (-720.473mil,1281.497mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7090.346mil|Location2.X=7196.771mil|Location1.Y=5208.127mil|Location2.Y=5294.867mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7090.346mil|Location2.X=7196.771mil|Location1.Y=5208.127mil|Location2.Y=5294.867mil|Absolute=True">Pad C5-6(-720.473mil,1281.497mil)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7127.559mil|Location2.X=7159.559mil|Location1.Y=5585.889mil|Location2.Y=5617.889mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7127.559mil|Location2.X=7159.559mil|Location1.Y=5585.889mil|Location2.Y=5617.889mil|Absolute=True">Via (-720.473mil,1631.889mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7090.346mil|Location2.X=7196.771mil|Location1.Y=5558.519mil|Location2.Y=5645.259mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7090.346mil|Location2.X=7196.771mil|Location1.Y=5558.519mil|Location2.Y=5645.259mil|Absolute=True">Pad C5-8(-720.473mil,1631.889mil)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6911.023mil|Location2.X=6943.023mil|Location1.Y=5585.889mil|Location2.Y=5617.889mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6911.023mil|Location2.X=6943.023mil|Location1.Y=5585.889mil|Location2.Y=5617.889mil|Absolute=True">Via (-937.009mil,1631.889mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6873.81mil|Location2.X=6980.235mil|Location1.Y=5558.519mil|Location2.Y=5645.259mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6873.81mil|Location2.X=6980.235mil|Location1.Y=5558.519mil|Location2.Y=5645.259mil|Absolute=True">Pad C5-9(-937.009mil,1631.889mil)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6911.023mil|Location2.X=6943.023mil|Location1.Y=5235.497mil|Location2.Y=5267.497mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6911.023mil|Location2.X=6943.023mil|Location1.Y=5235.497mil|Location2.Y=5267.497mil|Absolute=True">Via (-937.009mil,1281.497mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6873.81mil|Location2.X=6980.235mil|Location1.Y=5208.127mil|Location2.Y=5294.867mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\SANYI\SASA\PCB\Bike_Gps\v1\Bike_Gps_v1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6873.81mil|Location2.X=6980.235mil|Location1.Y=5208.127mil|Location2.Y=5294.867mil|Absolute=True">Pad C5-7(-937.009mil,1281.497mil)  Top Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>
